@@ -1,0 +1,23 @@
+name: Prohance
+type: Theme
+description: A basic custom theme
+package: Core
+core: 8.x
+
+stylesheets-remove:
+  - core/themes/bartik/css/colors.css
+  - core/themes/bartik/css/components/site-branding.css
+  - core/themes/bartik/css/components/site-footer.css
+  - core/themes/bartik/css/components/table.css
+  - core/themes/bartik/css/components/tablesort-indicator.css
+  - core/themes/bartik/css/components/tabs.css
+  - core/themes/bartik/css/components/text-formatted.css
+  - core/themes/bartik/css/components/toolbar.css
+  - core/themes/bartik/css/components/featured-bottom.css
+  - core/themes/bartik/css/components/password-suggestions.css
+  - core/themes/bartik/css/components/ui.widget.css
+  - core/themes/bartik/css/components/vertical-tabs.component.css
+  - core/themes/bartik/css/components/views.css
+  - core/themes/bartik/css/components/buttons.css
+  - core/themes/bartik/css/components/image-button.css
+  - core/themes/bartik/css/components/ui-dialog.css
