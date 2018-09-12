@@ -1,0 +1,113 @@
+<?php
+
+/**
+ * @file
+ * Preprocess functions for Basic.
+ */
+
+use Drupal\Core\Cache\CacheableMetadata;
+
+/**
+ * Prepares variables for the html.html.twig template.
+ */
+function prohance_preprocess_html(&$variables) {
+
+
+  
+  try {
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  }
+  catch (Exception $e) {
+    // If the database is not yet available, set default values for these
+    // variables.
+    $variables['is_front'] = FALSE;
+  }
+
+  // If we're on the front page.
+  if (!$variables['is_front']) {
+    // Add unique classes for each page and website section.
+    $path = \Drupal::service('path.current')->getPath();
+    $alias = \Drupal::service('path.alias_manager')->getAliasByPath($path);
+    $alias = trim($alias, '/');
+    if (!empty($alias)) {
+      $name = str_replace('/', '-', $alias);
+      $variables['attributes']['class'][] = 'page-' . $name;
+      list($section,) = explode('/', $alias, 2);
+      if (!empty($section)) {
+        $variables['attributes']['class'][] = 'section-' . $section;
+      }
+      if($alias == 'products/prohance-d') {
+        $variables['attributes']['class'][] = 'prohanceD';
+      } 
+      if($alias == 'products/prohance-mom') {
+        $variables['attributes']['class'][] = 'voilet-theme prohance-m';
+      } 
+      if($alias == 'products/prohance') {
+        $variables['attributes']['class'][] = 'green-theme prohance-c';
+      } 
+      
+    }
+      $variables['base_path'] = base_path();
+      $variables['site_url'] = $GLOBALS['base_url'];
+      //$variables['asset_path'] = '/assets'; //this could also be a sub-domain.
+  } else {
+    $variables['attributes']['class'][] = 'landing-page';
+  }
+
+  // Add cachability metadata.
+  $theme_name = \Drupal::theme()->getActiveTheme()->getName();
+  $theme_settings = \Drupal::config($theme_name . '.settings');
+  CacheableMetadata::createFromRenderArray($variables)
+    ->addCacheableDependency($theme_settings)
+    ->applyTo($variables);
+    // Union all theme setting variables to the html.html.twig template.
+  $variables += $theme_settings->getOriginal();
+  
+}
+
+function prohance_preprocess_node(&$variables) {
+    /** @var \Drupal\node\NodeInterface $node */
+    $node = $variables['node'];
+    $variables['url'] = $node->toUrl('canonical', [
+        'absolute' => TRUE,
+        'language' => $node->language(),
+    ])->toString();
+}
+/**
+ * Prepares variables for the field.html.twig template.
+ */
+function prohance_preprocess_field(&$variables, $hook) {
+  // Make additional variables available to the template.
+  $variables['bundle'] = $variables['element']['#bundle'];
+}
+
+
+/**
+
+* Implements hook_theme_suggestions_HOOK_alter().
+
+*/
+
+function prohance_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    //echo '<pre>'; print_r($node); echo '</pre>';
+    $content_type = $node->bundle();
+    //echo $content_type;
+    //exit;
+    if($node->nid->value == 5) {
+      $suggestions[] = 'page__featured_alumni';
+    } else {
+      $suggestions[] = 'page__'.$content_type;
+    }
+  }
+  if (\Drupal::routeMatch()->getRouteName() == 'entity.taxonomy_term.canonical' && $tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
+    $term = Term::load($tid);
+    if(trim($term->getVocabularyId())=='special_interest'){
+      $suggestions[] = 'page__vocabulary__special_interest';
+    }
+  }
+}
+
+function prohance_preprocess_page(&$variables) {
+  $variables['image_base_path'] = \Drupal::config('assets_path')->get('url');
+}

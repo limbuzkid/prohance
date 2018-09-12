@@ -1,0 +1,15 @@
+name: Prohance
+type: theme
+description: A basic custom theme
+core: 8.x
+
+libraries:
+  - prohance/global
+
+libraries-override:
+  core/modernizr: false
+  system/base: false
+  
+stylesheets-remove:
+  - /core/themes/stable/css/views/views.module.css
+

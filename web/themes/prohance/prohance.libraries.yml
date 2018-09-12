@@ -1,0 +1,13 @@
+global:
+  css:
+    theme:
+      css/style.css: {}
+      css/media.css: {}
+      css/jquery.fullPage.css: {}
+  
+  js:
+    js/common.js: {}
+    js/jquery.fullPage.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

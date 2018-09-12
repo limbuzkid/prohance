@@ -1,0 +1,21 @@
+custom_pages.prohance:
+  path: '/prohance'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::prohance'
+    _title: 'Prohance'
+  requirements:
+    _permission: 'access content'
+custom_pages.prohance_d:
+  path: '/prohance-d'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::prohance_d'
+    _title: 'Prohance D'
+  requirements:
+    _permission: 'access content'
+custom_pages.prohance_mom:
+  path: '/prohance-mom'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::prohance_mom'
+    _title: 'Prohance Mom'
+  requirements:
+    _permission: 'access content'

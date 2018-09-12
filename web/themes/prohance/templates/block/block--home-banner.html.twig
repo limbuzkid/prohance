@@ -1,0 +1,20 @@
+<div class="wrapper flex-wrp">
+  {% for data in content['#data_obj'] %}
+    <a href="{{ data.link_url }}">
+      <div class="product-wrp flex-wrp">
+        <div class="model-img">
+          <img src="{{ data.model_image }}" alt="model-img">
+        </div>
+        <div class="bg-img">
+          <img src="{{ data.background_image }}" alt="bg-img">
+          <span class="link-arr">
+            <img src="/{{ directory }}/images/prohanceC-arr.png" alt="link-arrow">
+          </span>
+        </div>
+        <div class="product-img">
+          <img src="{{ data.product_image }}" alt="product-img">
+        </div>
+      </div>
+    </a>
+  {% endfor %}
+</div>

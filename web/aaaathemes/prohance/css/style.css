@@ -1,0 +1,1081 @@
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/ProximaNova-Regular.ttf"), url("../fonts/ProximaNova-Regular.eot"), url("../fonts/ProximaNova-Regular.woff"), url("../fonts/ProximaNova-Regular.woff2"), url("../fonts/ProximaNova-Regular.svg");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url("../fonts/ProximaNova-Light.ttf"), url("../fonts/ProximaNova-Light.eot"), url("../fonts/ProximaNova-Light.woff"), url("../fonts/ProximaNova-Light.woff2"), url("../fonts/ProximaNova-Light.svg");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url("../fonts/ProximaNova-Semibold.ttf"), url("../fonts/ProximaNova-Semibold.eot"), url("../fonts/ProximaNova-Semibold.woff"), url("../fonts/ProximaNova-Semibold.woff2"), url("../fonts/ProximaNova-Semibold.svg");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/ProximaNova-Bold.ttf"), url("../fonts/ProximaNova-Bold.eot"), url("../fonts/ProximaNova-Bold.woff"), url("../fonts/ProximaNova-Bold.woff2"), url("../fonts/ProximaNova-Bold.svg");
+}
+
+@font-face {
+  font-family: 'Courgette-Regular';
+  src: url("../fonts/Courgette-Regular.ttf"), url("../fonts/Courgette-Regular.eot"), url("../fonts/Courgette-Regular.woff"), url("../fonts/Courgette-Regular.woff2"), url("../fonts/Courgette-Regular.svg");
+}
+
+/* line 59, ../scss/_base/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 69, ../scss/_base/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 72, ../scss/_base/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 75, ../scss/_base/_reset.scss */
+body {
+  line-height: 1;
+  color: #414042;
+  font-family: "ProximaNova-Regular";
+}
+
+/* line 80, ../scss/_base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 83, ../scss/_base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 87, ../scss/_base/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 91, ../scss/_base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 95, ../scss/_base/_reset.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 98, ../scss/_base/_reset.scss */
+a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+}
+
+/* line 99, ../scss/_base/_reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 100, ../scss/_base/_reset.scss */
+input, button, select, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  font-family: "ProximaNova-Regular";
+}
+
+/*-----------------Default Starts-----------------*/
+/* line 3, ../scss/_base/_default.scss */
+.flex-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* line 14, ../scss/_base/_default.scss */
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 20, ../scss/_base/_default.scss */
+.container-flow {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 24, ../scss/_base/_default.scss */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+/*-----------------Default Ends-----------------*/
+/*-----------------Button Starts-----------------*/
+/* line 35, ../scss/_base/_default.scss */
+button.exp-btn {
+  font-family: "Courgette-Regular";
+  font-size: 1.6rem;
+  color: white;
+  padding: 7px 25px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3160ad;
+  margin: 20px 0;
+}
+
+/*-----------------Button Ends-----------------*/
+/*-----------------Text Starts-----------------*/
+/* line 49, ../scss/_base/_default.scss */
+.head-txt {
+  position: relative;
+}
+/* line 51, ../scss/_base/_default.scss */
+.head-txt h2 {
+  font-family: "Courgette-Regular";
+  font-size: 6.5rem;
+  color: #3160ad;
+  padding: 20px 0;
+}
+
+/* line 58, ../scss/_base/_default.scss */
+.para-txt {
+  font-size: 1.8rem;
+  font-family: "ProximaNova-Regular";
+  line-height: 27px;
+}
+
+/*-----------------Text Ends-----------------*/
+/*-----------------pro Count Ends-----------------*/
+/* line 69, ../scss/_base/_default.scss */
+ul.pro-count li {
+  color: #3160ad;
+  padding: 20px 0;
+  border-bottom: 1px solid #a6ecf8;
+  line-height: 30px;
+}
+/* line 74, ../scss/_base/_default.scss */
+ul.pro-count li:last-child {
+  border: none !important;
+}
+/* line 77, ../scss/_base/_default.scss */
+ul.pro-count li p {
+  font-size: 3rem;
+  font-family: "ProximaNova-Semibold";
+}
+/* line 81, ../scss/_base/_default.scss */
+ul.pro-count li .cour-txt {
+  font-family: "Courgette-Regular";
+  font-size: 4rem;
+}
+/* line 85, ../scss/_base/_default.scss */
+ul.pro-count li .reg-txt {
+  font-family: "ProximaNova-Regular";
+  font-size: 2rem;
+}
+
+/*-----------------pro Count Ends-----------------*/
+/*-----------------Pro Contents Starts-----------------*/
+/* line 96, ../scss/_base/_default.scss */
+ul.pro-contents li p {
+  font-size: 1.8rem;
+  font-family: "ProximaNova-Bold";
+  margin-left: 20px;
+}
+/* line 101, ../scss/_base/_default.scss */
+ul.pro-contents .pro-speciality {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+/* line 105, ../scss/_base/_default.scss */
+ul.pro-contents .pro-speciality p {
+  font-size: 1.8rem;
+  font-family: "ProximaNova-Bold";
+  margin-left: 20px;
+  line-height: 25px;
+}
+
+/*-----------------Pro Contents Ends-----------------*/
+/*-----------------Pro Contents Ends-----------------*/
+/* line 117, ../scss/_base/_default.scss */
+.petals {
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 121, ../scss/_base/_default.scss */
+.petal1 {
+  left: 7%;
+  top: 15%;
+}
+
+/* line 125, ../scss/_base/_default.scss */
+.petal2 {
+  left: 20%;
+  top: 85%;
+}
+
+/* line 129, ../scss/_base/_default.scss */
+.petal3 {
+  left: 75%;
+  top: 20%;
+}
+
+/* line 133, ../scss/_base/_default.scss */
+.big-petal {
+  left: 65%;
+  top: -10%;
+}
+
+/* line 137, ../scss/_base/_default.scss */
+.petal5 {
+  left: 75%;
+  top: 90%;
+}
+
+/* line 141, ../scss/_base/_default.scss */
+.petal6 {
+  left: 0;
+  top: 70%;
+}
+
+/*-----------------Pro Contents Ends-----------------*/
+/*-----------------Themes Starts-----------------*/
+/* line 150, ../scss/_base/_default.scss */
+.green-theme button.exp-btn {
+  background-color: #047c2a;
+}
+/* line 154, ../scss/_base/_default.scss */
+.green-theme .head-txt h2, .green-theme ul.pro-contents .pro-speciality p, .green-theme ul.pro-count li,
+.green-theme section.video-scoop .video-txt .head-txt h2 {
+  color: #047c2a;
+}
+/* line 157, ../scss/_base/_default.scss */
+.green-theme ul.pro-count li {
+  border-bottom: 1px solid #85b836;
+}
+/* line 162, ../scss/_base/_default.scss */
+.green-theme section.video-scoop .video-txt {
+  color: black;
+}
+/* line 165, ../scss/_base/_default.scss */
+.green-theme section.main-banner {
+  background: linear-gradient(to bottom, #e7f5d2, #ccdfa9);
+}
+/* line 168, ../scss/_base/_default.scss */
+.green-theme section.product-property {
+  background: white;
+}
+/* line 171, ../scss/_base/_default.scss */
+.green-theme section.benefits {
+  background: linear-gradient(to bottom, #fffdf3, #f4edc6);
+}
+
+/* line 181, ../scss/_base/_default.scss */
+.voilet-theme button.exp-btn {
+  background-color: #82339d;
+}
+/* line 185, ../scss/_base/_default.scss */
+.voilet-theme .head-txt h2, .voilet-theme ul.pro-contents .pro-speciality p, .voilet-theme ul.pro-count li,
+.voilet-theme section.video-scoop .video-txt .head-txt h2 {
+  color: #82339d;
+}
+/* line 188, ../scss/_base/_default.scss */
+.voilet-theme ul.pro-count li {
+  border-bottom: 1px solid #f3b5c5;
+}
+/* line 193, ../scss/_base/_default.scss */
+.voilet-theme section.video-scoop .video-txt {
+  color: black;
+}
+/* line 196, ../scss/_base/_default.scss */
+.voilet-theme section.main-banner {
+  background: linear-gradient(to bottom, #fee7ed, #f1cbd5);
+}
+/* line 199, ../scss/_base/_default.scss */
+.voilet-theme section.product-property {
+  background: white;
+}
+/* line 202, ../scss/_base/_default.scss */
+.voilet-theme section.benefits {
+  background: linear-gradient(to bottom, #feeee8, #f6dbce);
+}
+
+/*-----------------Themes Ends-----------------*/
+/*-----------------Scroll Down Starts-----------------*/
+/* line 213, ../scss/_base/_default.scss */
+.scroll-down {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 5%;
+  font-family: "ProximaNova-Semibold";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 222, ../scss/_base/_default.scss */
+.scroll-down span {
+  display: inline-block;
+  margin-top: 10px;
+  position: relative;
+  animation: down-anim 0.5s infinite alternate;
+}
+
+@keyframes down-anim {
+  /* line 231, ../scss/_base/_default.scss */
+  0% {
+    transform: translateY(80%);
+  }
+
+  /* line 234, ../scss/_base/_default.scss */
+  100% {
+    transform: translateY(5%);
+  }
+}
+
+/*-----------------Scroll Down Ends-----------------*/
+/*-----------------Header Starts-----------------*/
+/* line 2, ../scss/_base/_common.scss */
+header {
+  border-bottom: 1px solid #ebebeb;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 4;
+  top: 0;
+  left: 0;
+}
+/* line 10, ../scss/_base/_common.scss */
+header .wrapper {
+  padding: 20px 0;
+  max-width: 955px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 17, ../scss/_base/_common.scss */
+header ul.main-menu li {
+  position: relative;
+  padding: 10px 0;
+  overflow: hidden;
+}
+/* line 22, ../scss/_base/_common.scss */
+header ul.main-menu li:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#c3e88c), to(#047c2a));
+  background: linear-gradient(-270deg, #c3e88c, #047c2a);
+  bottom: 4px;
+  left: 0;
+  -webkit-transform: translateX(-110%);
+  -ms-transform: translateX(-110%);
+  transform: translateX(-110%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/* line 34, ../scss/_base/_common.scss */
+header ul.main-menu li:hover:after {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 38, ../scss/_base/_common.scss */
+header ul.main-menu li.main-logo:after {
+  display: none;
+}
+/* line 44, ../scss/_base/_common.scss */
+header ul.main-menu li.main-logo img {
+  width: 100%;
+}
+/* line 48, ../scss/_base/_common.scss */
+header ul.main-menu li a {
+  color: #414042;
+  font-family: "ProximaNova-Semibold";
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+/*-----------------Header Ends-----------------*/
+/*-----------------Product Starts-----------------*/
+/* line 63, ../scss/_base/_common.scss */
+.bg-img.active {
+  /* transform: scale(1); */
+  animation: bounce 0.8s;
+  -webkit-animation: bounce 0.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounce {
+  /* line 72, ../scss/_base/_common.scss */
+  0% {
+    transform: scale(0.2);
+  }
+
+  /* line 73, ../scss/_base/_common.scss */
+  50% {
+    transform: scale(1.1);
+  }
+
+  /* line 74, ../scss/_base/_common.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  /* line 78, ../scss/_base/_common.scss */
+  0% {
+    transform: scale(0.2);
+  }
+
+  /* line 79, ../scss/_base/_common.scss */
+  50% {
+    transform: scale(1.1);
+  }
+
+  /* line 80, ../scss/_base/_common.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* line 83, ../scss/_base/_common.scss */
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+/* line 95, ../scss/_base/_common.scss */
+#rotator {
+  width: 300px;
+  height: 420px;
+  background: transparent url(../images/final-sprite.png) no-repeat 0 0;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: productAnim 6s infinite;
+  -webkit-animation: productAnim 6s infinite;
+  z-index: 1;
+}
+/* line 106, ../scss/_base/_common.scss */
+#rotator:after {
+  background: url(../images/shadow.png) 0 0;
+  content: "";
+  width: 195px;
+  height: 41px;
+  top: 430px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: shadowAnim 6s infinite;
+  -webkit-animation: shadowAnim 6s infinite;
+  z-index: 81;
+  position: absolute;
+}
+
+@-webkit-keyframes productAnim {
+  /* line 121, ../scss/_base/_common.scss */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 122, ../scss/_base/_common.scss */
+  50% {
+    margin-top: 25px;
+  }
+
+  /* line 123, ../scss/_base/_common.scss */
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes productAnim {
+  /* line 126, ../scss/_base/_common.scss */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 127, ../scss/_base/_common.scss */
+  50% {
+    margin-top: 25px;
+  }
+
+  /* line 128, ../scss/_base/_common.scss */
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@-webkit-keyframes shadowAnim {
+  /* line 131, ../scss/_base/_common.scss */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 132, ../scss/_base/_common.scss */
+  50% {
+    margin-top: -40px;
+  }
+
+  /* line 133, ../scss/_base/_common.scss */
+  100% {
+    margin-top: 0px;
+  }
+}
+
+@keyframes shadowAnim {
+  /* line 136, ../scss/_base/_common.scss */
+  0% {
+    margin-top: 0px;
+  }
+
+  /* line 137, ../scss/_base/_common.scss */
+  50% {
+    margin-top: -40px;
+  }
+
+  /* line 138, ../scss/_base/_common.scss */
+  100% {
+    margin-top: 0px;
+  }
+}
+
+/*-----------------Product Ends-----------------*/
+/*-----------------Landing Page Starts-----------------*/
+/* line 145, ../scss/_base/_common.scss */
+section.product .landing-desc {
+  font-size: 1.8rem;
+  font-family: "ProximaNova-Regular";
+  text-align: center;
+  top: -100px;
+  position: relative;
+}
+/* line 151, ../scss/_base/_common.scss */
+section.product .landing-desc .bold {
+  font-family: "ProximaNova-Bold";
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+/* line 157, ../scss/_base/_common.scss */
+section.product .product-wrp {
+  position: relative;
+}
+/* line 161, ../scss/_base/_common.scss */
+section.product .product-wrp .bg-img:hover .link-arr {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+/* line 165, ../scss/_base/_common.scss */
+section.product .product-wrp .bg-img .link-arr {
+  display: inline-block;
+  position: absolute;
+  bottom: -20px;
+  left: 33%;
+  transition: 0.5s;
+}
+/* line 171, ../scss/_base/_common.scss */
+section.product .product-wrp .bg-img .link-arr img {
+  width: inherit;
+}
+/* line 176, ../scss/_base/_common.scss */
+section.product .product-wrp img {
+  width: 100%;
+}
+/* line 179, ../scss/_base/_common.scss */
+section.product .product-wrp .model-img {
+  position: absolute;
+  left: 3%;
+}
+/* line 183, ../scss/_base/_common.scss */
+section.product .product-wrp .product-img {
+  max-width: 175px;
+  width: 100%;
+  position: absolute;
+  right: -8%;
+  bottom: -15%;
+  animation: product-anim 2s linear infinite alternate;
+}
+/* line 190, ../scss/_base/_common.scss */
+section.product .product-wrp .product-img:after {
+  background: url(../images/shadow.png) no-repeat center center;
+  content: "";
+  background-size: contain;
+  width: 100%;
+  height: 41px;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: shadowAnim1 4s infinite alternate-reverse;
+  -webkit-animation: shadowAnim1 4s infinite alternate-reverse;
+  z-index: 81;
+  position: absolute;
+}
+
+@keyframes product-anim {
+  /* line 209, ../scss/_base/_common.scss */
+  0% {
+    bottom: -10%;
+  }
+
+  /* line 213, ../scss/_base/_common.scss */
+  100% {
+    bottom: -5%;
+  }
+}
+
+@keyframes shadowAnim1 {
+  /* line 219, ../scss/_base/_common.scss */
+  0% {
+    margin-top: 0px;
+    bottom: -40px;
+  }
+
+  /* line 223, ../scss/_base/_common.scss */
+  50% {
+    bottom: -60px;
+    width: 80%;
+  }
+
+  /* line 228, ../scss/_base/_common.scss */
+  100% {
+    bottom: -40px;
+  }
+}
+
+/*-----------------Landing Page Ends-----------------*/
+/*-----------------Prohance-C Page Starts-----------------*/
+/* line 238, ../scss/_base/_common.scss */
+.prohance-c #rotator {
+  background: transparent url(../images/prohanceC/prohance-classic-sprite.png) no-repeat 0 0;
+}
+/* line 241, ../scss/_base/_common.scss */
+.prohance-c section.main-banner .middle-img .run-img {
+  top: -25%;
+  left: -15%;
+  max-width: 115px;
+}
+/* line 246, ../scss/_base/_common.scss */
+.prohance-c section.video-scoop .video-txt {
+  left: 50%;
+  top: 30%;
+  text-align: center;
+  max-width: 550px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*-----------------Prohance-C Page Ends-----------------*/
+/*-----------------Prohance-M Page Starts-----------------*/
+/* line 263, ../scss/_base/_common.scss */
+.prohance-m header ul.main-menu li:after {
+  background: -webkit-gradient(linear, left top, right top, from(#fec5d3), to(#ac4bca));
+  background: linear-gradient(-270deg, #fec5d3, #ac4bca);
+}
+/* line 270, ../scss/_base/_common.scss */
+.prohance-m #rotator {
+  background: transparent url(../images/prohanceM/prohance-mom-sprite.png) no-repeat 0 0;
+}
+/* line 273, ../scss/_base/_common.scss */
+.prohance-m section.main-banner .middle-img .run-img {
+  left: -10%;
+  top: 7%;
+  max-width: 110px;
+}
+/* line 278, ../scss/_base/_common.scss */
+.prohance-m section.video-scoop .video-txt {
+  left: 75%;
+  top: inherit;
+  bottom: 20%;
+  text-align: left;
+  max-width: 470px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/*-----------------Prohance-M Page Ends-----------------*/
+/*-----------------Prohance-D Page Starts-----------------*/
+/* line 296, ../scss/_base/_common.scss */
+.prohanceD header ul.main-menu li:after {
+  background: -webkit-gradient(linear, left top, right top, from(#bcf3fc), to(#3167fb));
+  background: linear-gradient(-270deg, #bcf3fc, #3167fb);
+}
+
+/* line 306, ../scss/_base/_common.scss */
+section.main-banner {
+  background: linear-gradient(to bottom, #e8fafd, #b5e0e7);
+}
+/* line 308, ../scss/_base/_common.scss */
+section.main-banner .middle-wrp {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+/* line 319, ../scss/_base/_common.scss */
+section.main-banner .left-text {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  width: 30%;
+}
+/* line 323, ../scss/_base/_common.scss */
+section.main-banner .left-text > p {
+  font-family: "Courgette-Regular";
+  font-size: 2.2rem;
+}
+/* line 328, ../scss/_base/_common.scss */
+section.main-banner .middle-img {
+  position: relative;
+  text-align: center;
+}
+/* line 334, ../scss/_base/_common.scss */
+section.main-banner .middle-img .product-img {
+  max-width: 230px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 342, ../scss/_base/_common.scss */
+section.main-banner .middle-img img {
+  width: 100%;
+}
+/* line 345, ../scss/_base/_common.scss */
+section.main-banner .middle-img .run-img {
+  position: absolute;
+  left: -35%;
+  top: 7%;
+  max-width: 291px;
+  width: 100%;
+}
+/* line 353, ../scss/_base/_common.scss */
+section.main-banner .right-text {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  width: 30%;
+}
+
+/* line 363, ../scss/_base/_common.scss */
+section.product-property {
+  background: white;
+}
+/* line 365, ../scss/_base/_common.scss */
+section.product-property .middle-wrp {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+/* line 370, ../scss/_base/_common.scss */
+section.product-property .left-text {
+  margin-top: 100px;
+}
+/* line 372, ../scss/_base/_common.scss */
+section.product-property .left-text p.para-txt {
+  font-family: "ProximaNova-Regular";
+  font-size: 1.8rem;
+}
+/* line 376, ../scss/_base/_common.scss */
+section.product-property .left-text .pro-desc {
+  padding-left: 60px;
+}
+/* line 380, ../scss/_base/_common.scss */
+section.product-property .left-text .head-txt .arrows1 {
+  position: absolute;
+  left: -15px;
+  bottom: -40%;
+}
+/* line 388, ../scss/_base/_common.scss */
+section.product-property .middle-img .bg-img {
+  max-width: 471px;
+  width: 100%;
+}
+/* line 393, ../scss/_base/_common.scss */
+section.product-property .right-text {
+  margin-top: 100px;
+}
+/* line 395, ../scss/_base/_common.scss */
+section.product-property .right-text .pro-desc {
+  padding-right: 40px;
+}
+/* line 399, ../scss/_base/_common.scss */
+section.product-property .right-text .head-txt .arrows2 {
+  position: absolute;
+  right: 10px;
+  bottom: -40%;
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+/* line 404, ../scss/_base/_common.scss */
+section.product-property .right-text .head-txt .arrows2 img {
+  transform: rotate(30deg);
+}
+
+/* line 415, ../scss/_base/_common.scss */
+section.benefits {
+  background: linear-gradient(to bottom, #effff8, #c9e9d2);
+}
+/* line 417, ../scss/_base/_common.scss */
+section.benefits .petal2 {
+  left: 32%;
+  top: 75%;
+}
+/* line 421, ../scss/_base/_common.scss */
+section.benefits .wrapper > .head-txt {
+  text-align: center;
+  margin-bottom: 120px;
+}
+/* line 426, ../scss/_base/_common.scss */
+section.benefits ul.pro-count li {
+  border: none;
+}
+/* line 428, ../scss/_base/_common.scss */
+section.benefits ul.pro-count li .pro-speciality p {
+  font-family: "ProximaNova-Regular";
+}
+/* line 432, ../scss/_base/_common.scss */
+section.benefits .pro-desc {
+  position: relative;
+}
+/* line 434, ../scss/_base/_common.scss */
+section.benefits .pro-desc .arrows3 {
+  position: absolute;
+  right: -90px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 439, ../scss/_base/_common.scss */
+section.benefits .pro-desc .arrows3 img {
+  -webkit-transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  transform: rotate(110deg);
+}
+/* line 444, ../scss/_base/_common.scss */
+section.benefits .left-text {
+  margin-top: 0;
+}
+/* line 448, ../scss/_base/_common.scss */
+section.benefits .right-text .arrows3 {
+  position: absolute;
+  left: -100px;
+  top: 50%;
+}
+/* line 452, ../scss/_base/_common.scss */
+section.benefits .right-text .arrows3 img {
+  -webkit-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  transform: rotate(-70deg);
+}
+
+/* line 462, ../scss/_base/_common.scss */
+section.video-scoop {
+  z-index: 3;
+}
+/* line 464, ../scss/_base/_common.scss */
+section.video-scoop:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: block;
+}
+/* line 474, ../scss/_base/_common.scss */
+section.video-scoop .big-petal {
+  left: 15%;
+  top: -5%;
+}
+/* line 478, ../scss/_base/_common.scss */
+section.video-scoop .wrapper {
+  position: relative;
+}
+/* line 481, ../scss/_base/_common.scss */
+section.video-scoop .video-wrp {
+  height: 100%;
+}
+/* line 483, ../scss/_base/_common.scss */
+section.video-scoop .video-wrp iframe {
+  width: 100%;
+  height: 100%;
+}
+/* line 488, ../scss/_base/_common.scss */
+section.video-scoop .video-txt {
+  color: white;
+  position: absolute;
+  max-width: 470px;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 495, ../scss/_base/_common.scss */
+section.video-scoop .video-txt .head-txt h2 {
+  color: white;
+}
+
+/* line 504, ../scss/_base/_common.scss */
+section.health {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+/* line 509, ../scss/_base/_common.scss */
+section.health .head-txt h2 span {
+  margin-left: -80px;
+}
+/* line 513, ../scss/_base/_common.scss */
+section.health .right-text {
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+/* line 517, ../scss/_base/_common.scss */
+section.health .petal5 {
+  left: 65%;
+  top: 88%;
+}
+/* line 521, ../scss/_base/_common.scss */
+section.health .btn-wrp {
+  text-align: right;
+}
+
+/*-----------------Prohance-D Page Starts-----------------*/
+/*-----------------Footer Starts-----------------*/
+/* line 533, ../scss/_base/_common.scss */
+footer .wrapper {
+  padding: 15px 40px;
+}
+/* line 537, ../scss/_base/_common.scss */
+footer .copy p.copyright {
+  font-size: 1.2rem;
+  font-family: "ProximaNova-Semibold";
+}
+/* line 542, ../scss/_base/_common.scss */
+footer ul li {
+  border-right: 1px solid grey;
+  padding: 0 7px;
+}
+/* line 545, ../scss/_base/_common.scss */
+footer ul li:last-child {
+  border: none;
+}
+/* line 548, ../scss/_base/_common.scss */
+footer ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "ProximaNova-Semibold";
+  text-transform: capitalize;
+  color: inherit;
+}
+/* line 557, ../scss/_base/_common.scss */
+footer .social-wrp li {
+  border: none;
+}
+
+/*-----------------Footer Ends-----------------*/
+/*-----------------Animations Starts-----------------*/
+/* line 567, ../scss/_base/_common.scss */
+.left-animate {
+  -webkit-transform: translateX(-120%);
+  -ms-transform: translateX(-120%);
+  transform: translateX(-120%);
+}
+
+/* line 570, ../scss/_base/_common.scss */
+.right-animate {
+  -webkit-transform: translateX(120%);
+  -ms-transform: translateX(120%);
+  transform: translateX(120%);
+}
+
+/* line 573, ../scss/_base/_common.scss */
+.fade-animate {
+  opacity: 0;
+}
+
+/* line 576, ../scss/_base/_common.scss */
+.top-animate {
+  -webkit-transform: translateY(-120%);
+  -ms-transform: translateY(-120%);
+  transform: translateY(-120%);
+}
+
+/* line 579, ../scss/_base/_common.scss */
+.bottom-animate {
+  -webkit-transform: translateY(120%);
+  -ms-transform: translateY(120%);
+  transform: translateY(120%);
+}
+
+/* line 584, ../scss/_base/_common.scss */
+section.active .left-animate, section.active .right-animate {
+  -webkit-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 587, ../scss/_base/_common.scss */
+section.active .top-animate, section.active .bottom-animate {
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+/* line 590, ../scss/_base/_common.scss */
+section.active .fade-animate {
+  transition-delay: 0.5s;
+  opacity: 1;
+}
+
+/*-----------------Animations Ends-----------------*/

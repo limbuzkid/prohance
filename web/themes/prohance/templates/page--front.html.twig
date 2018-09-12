@@ -1,0 +1,50 @@
+<header>
+  <div class="container-flow">
+    <div class="wrapper">
+      <nav>
+        <ul class="flex-wrp main-menu">
+          {{ page.menu_left }}
+          {{ page.logo }}
+          {{ page.menu_right }}
+        </ul>   
+      </nav>
+    </div>
+  </div>
+</header>
+{{ page.message }}
+<main id="fullpage">
+  <section class="product flex-wrp">
+    <div class="container">
+      <div class="landing-desc">
+        <p>Click on the products below to know more about the</p>
+        <p class="bold">Prohance range</p>
+      </div>
+      {{ page.banner }}
+    </div>
+  </section>        
+</main>
+<footer>
+  <div class="container-flow">
+    <div class="wrapper flex-wrp">
+      <div class="copy flex-wrp">
+        <p class="copyright">Copyright &copy; Sun Pharmaceutical Industries Ltd. </p>
+        <ul class="flex-wrp">
+          {{ page.footer }}
+        </ul>
+      </div>
+      <div class="subs-wrp">
+        <ul class="flex-wrp">
+          <li><a href="javascript:;">subscribe</a></li>
+          <li><a href="javascript:;">unbscribe</a></li>
+        </ul>
+      </div>
+      <div class="social-wrp">
+        <ul class="flex-wrp">
+          <li><img src="/{{ directory }}/images/fb.png" alt="fb"></li>
+          <li><img src="/{{ directory }}/images/tw.png" alt="tw"></li>
+          <li><img src="/{{ directory }}/images/yt.png" alt="yt"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
